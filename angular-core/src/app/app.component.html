@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>GeoLocater</title>
+  </head>
+
+  <body>
+    <div id="header"><b><span style="color:orangered">Geo</span>Locater</b></div>
+    <div class="form-group">        
+      <form (submit)="getResult()">
+        <input id="in" type="text" [(ngModel)]="input_lat" name="input_lat">
+        <input id="in" type="text" [(ngModel)]="input_long" name="input_long">
+        <input type="submit" value="Get!">
+      </form>            
+    </div>
+    
+    <sebm-google-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="true" [zoom]="zoom" #map id="map">
+      <sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+    </sebm-google-map>
+    
+    <div *ngIf="edited" id="city"> 
+      <br>       
+      <div><img src="../assets/globe.png" width="25" height="25"/>&nbsp;<b>{{name}}</b></div>
+      <div>{{lat}}</div>
+      <div>{{long}}</div>
+    </div>
+    <br>
+    <br>
+    <div *ngIf="visible" id="result">      
+      <div style="color:#e08e11"><img src="../assets/currency.png" width="25" height="25"/> &nbsp;<b>Currency : {{data?.currency}}</b> </div> 
+    </div>
+    
+  </body>
+</html>
+
+

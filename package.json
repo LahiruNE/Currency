@@ -1,0 +1,21 @@
+{
+  "name": "geo_locate",
+  "version": "1.0.0",
+  "description": "Geo Locating and wheather forecasting App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "underscore": "1.4.4"
+  },
+  "author": "Walawwe_Set_Eka",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/googlemaps": "^3.26.11"
+  }
+}

@@ -1,0 +1,58 @@
+#map {
+        position: fixed;
+        left: 10px;
+        height: 500px;
+        width: 900px;
+        top: 100px;     
+}
+
+#header{
+  font-size: 60px;
+  font-family: monospace;
+}
+
+h1{
+  text-align: center;
+}
+
+.form-group{
+  position: fixed;
+  width: 300px;
+  margin-left:950px;
+  margin-top: 50px;
+}
+
+#in{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url('../assets/rsz_search.png');
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+#city{
+  position: fixed;
+  margin-top: 180px;
+  margin-left: 950px;
+}
+      
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+#result{
+  position: fixed;
+  margin-left: 950px;
+  margin-top: 250px;
+}
